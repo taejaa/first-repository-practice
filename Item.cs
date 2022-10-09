@@ -5,13 +5,14 @@ using UnityEngine;
 public class Item : MonoBehaviour
 //Hello, Nice to meet you. I majored in computer science
 {
-    public string type;
-    Rigidbody2D riged;
+    public int dmg;
 
-    void Awake()
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        riged = GetComponent<Rigidbody2D>();
-        riged.velocity = Vector2.down * 3;
-
+        if (collision.gameObject.tag == "BorderBullet")
+        {
+            Destroy(gameObject);
+        }
     }
+}
 }
