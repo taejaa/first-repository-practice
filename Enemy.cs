@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public string enemysize;
     public string enemyName;
     public int enemyScore;
     public float speed;

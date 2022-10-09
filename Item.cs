@@ -9,8 +9,7 @@ public class Item : MonoBehaviour
 
     void Awake()
     {
-        riged = GetComponent<Rigidbody2D>();
-        riged.velocity = Vector2.down * 3;
+
 
     }
 }
