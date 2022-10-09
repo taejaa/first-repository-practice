@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Item : MonoBehaviour
+//Hello, Nice to meet you. I majored in computer science
 {
     public string type;
     Rigidbody2D riged;
